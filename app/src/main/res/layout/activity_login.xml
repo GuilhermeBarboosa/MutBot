@@ -20,11 +20,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:fadeScrollbars="false"
         android:hint="@string/edit_usuario"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:visibility="visible"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textColorHint="#03A9F4"
+        android:visibility="visible" />
 
     <EditText
         android:id="@+id/editTextTextSenha"
@@ -34,7 +36,17 @@
         android:hint="@string/edit_senha"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textColor="@color/black"/>
+        android:password="true"
+        android:textColor="@color/black"
+        android:textColorHint="#03A9F4" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/botaoEntrar"

@@ -4,4 +4,5 @@
     <string name="edit_senha">Senha</string>
     <string name="botao_entrar">Entrar</string>
     <string name="text_ou">Ou</string>
+    <string name="insira_usuario_e_senha">INSIRA USUARIO E SENHA</string>
 </resources>
