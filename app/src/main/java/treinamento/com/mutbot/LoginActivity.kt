@@ -14,7 +14,7 @@ import treinamento.com.mutbot.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLoginBinding;
+    private lateinit var binding: ActivityLoginBinding
     private lateinit var googleSignInCliente: GoogleSignInClient
     private var mAuth: FirebaseAuth? = null
 
@@ -29,16 +29,18 @@ class LoginActivity : AppCompatActivity() {
 
         binding.botaoEntrar.setOnClickListener {
 
-            mAuth!!.createUserWithEmailAndPassword(
-                binding.editTextTextUsuario.toString(),
-                binding.editTextTextSenha.toString()
+            val email =  binding.editTextTextUsuario.getText().toString().trim();
+            val senha = binding.editTextTextSenha.getText().toString().trim();
+            mAuth!!.signInWithEmailAndPassword(
+                email,
+                senha
             )
                 .addOnCompleteListener(
                     this
                 ) { task ->
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
-                        Log.d(TAG, "createUserWithEmail:success")
+                        Log.d(TAG, "signInWithCustomToken:success")
                         val user = mAuth!!.currentUser
 
                         Toast.makeText(
@@ -48,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
                         //updateUI(user)
                     } else {
                         // If sign in fails, display a message to the user.
-                        Log.w(TAG, "createUserWithEmail:failure", task.exception)
+                        Log.w(TAG, "signInWithCustomToken:failure", task.exception)
                         Toast.makeText(
                             baseContext, "Erro de autenticação",
                             Toast.LENGTH_SHORT
