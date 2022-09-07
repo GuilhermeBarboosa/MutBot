@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MutBot</string>
+    <string name="edit_usuario">Usuário</string>
+    <string name="edit_senha">Senha</string>
+    <string name="botao_entrar">Entrar</string>
+    <string name="text_ou">Ou</string>
 </resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1036102767783",
+    "project_id": "mutbot-78461",
+    "storage_bucket": "mutbot-78461.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036102767783:android:6200f76d7b8e7209a2f782",
+        "android_client_info": {
+          "package_name": "treinamento.com.mutbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036102767783-a8182jdjr51rtdrqoglm4aode5qckrih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfNH9kYywsEDkNzGsbBHUZ5S4p0PyefVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036102767783-a8182jdjr51rtdrqoglm4aode5qckrih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
